@@ -3,68 +3,86 @@
 <title>My first HTML document</title>
 <head>
 <style>
-body {
-		background-color: #22cdcb;
-		//background-image: linear-gradient(#cd2222 , #ffffff );
-     }
-h1 {
-	color: #3003f9;
-	text-align: center;
-   }
-   
-p {
-	//background-color: red;
-	color:  #ffffff;
-	font-size: 30px;
-  }
- /* 
-.title {
-	color: #8aea3e  ;
-	font-size: 40px;
-  }
-*/
-ul {
-	font-size: 30px;
-   }
+.container {
+ // top: 250px;
+  //left: 110px;
+  //top: 20px;
+  //left: 20px;
+  //left: 50%;
+  //margin-left: -90px;
+   //margin: auto;
+ //margin-top: 20px;
+ //margin-left: 20px;
+ //margin-top: -50px;
+ //margin-left: -100px;
+  margin: 10px;
+  height: 150px;
+  width: 300px;
+  //padding: 5px;
+  //position: static; /*статична стойност по подразбиране. Елементите се изобразяват в ред, както се показват в документния поток*/
+  //position: absolute; /*Елементът се позиционира спрямо неговия първи позициониран (не статичен) предшестващ елемент*/
+  //position: fixed; /*Елементът се позиционира спрямо прозореца на браузъра*/
+  //position: relative; /*Елементът е позициониран спрямо нормалната си позиция, така че "left:20px" добавя 20 пиксела към ЛЯВАТА позиция на елемента*/
+  //position: sticky; /*Елементът се позиционира въз основа на позицията на превъртане на потребителя*/
+  //position: initial; /*Задава това свойство на стойността му по подразбиране.*/
+  //position: inherit; /*Наследява това свойство от своя родителски елемент. Прочетете за наследяване*/
+    border: 2px solid green;
+  //border-radius: 25px 0px 25px 0px;
+  //border-radius: 25px;
+   //translate: 50px; /*Свойството translate ви позволява да променяте позицията на елементите.*/
+   //display: inline-block; /*Показва елемент като блоков контейнер на вградено ниво. Самият елемент е форматиран като вграден елемент, но можете да приложите стойности за височина и ширина*/
+   //display: inline; /*Показва елемент като вграден елемент (като <span>). Свойствата за височина и ширина няма да имат ефект. Това е по подразбиране.*/
+   float: left;
+   //overflow: visible; //Свойството за препълване на CSS контролира какво се случва със съдържание, което е твърде голямо, за да се побере в дадена област.
+}
+.container-border-radius{
+	margin: 10px;
+    height: 150px;
+    width: 300px;
+	float: left;
+	border: 1px solid red;
+    border-radius: 25px;
+}
+/*
+.container-border-radius:hover{
+	background-color: orange;
+}
 
-li {
-	list-style-type: none;	
-	}
-
-  /*
-.btn {
- border-radius: 5px;
- font-family: Arial, Helvetica, serif;
- font-size: 16px;
- background-color: green;
- width: 100px;
- height:80px;
+.container-border-radius:active{
+	background-color: red;
 }
 */
+.container-border-radius:hover{
+	background-color: blue;
+}
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+} 
+
 </style>
 </head>
-
 <body>
-<h1>Hello World!</h1>
-<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-aliquip ex ea commodo consequat.</p>
-<p> Duis aute irure dolor in reprehenderit in 
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-officia deserunt mollit anim id est laborum."</p>
-<br>
-<p>The ul element defines an unordered list:</p>
 
-<ul>
-  <a href="https://google.com"><li>Google</li></a>
-  <a href="coffee.html"><li>Coffee</li></a>
-  <a href="milk.html"><li>Milk</li></a>
-</ul>
-<button type="button" ><font color = "red"><a href="https://google.com">Open Google</a></font></button>
-<button type="button"><font color = "green">Close</font></button> 
-<button type="button" class="btn">Home</button> 
-<button type="button">About</button> 
+<div class="container">
+  
+</div>
+
+
+<div class="container-border-radius">
+  
+</div>
+<p>Mouse over and click the link: <a href="coffee.html">Coffee Page</a></p>
+
+
 </body>
 </html>
